@@ -1,9 +1,9 @@
-# 🤖 Assistant IA & Analyse de Documents
+#  Assistant IA & Analyse de Documents
 > Chatbot RAG (Retrieval-Augmented Generation) local avec DeepSeek R1, ChromaDB et Streamlit
 
 ---
 
-## 📌 C'est quoi ce projet ?
+##  C'est quoi ce projet ?
 
 Un chatbot intelligent qui **lit tes documents PDF ou images** et répond à tes questions en français.  
 Il tourne entièrement en local sur ta machine — aucune donnée ne part sur internet.
@@ -16,7 +16,7 @@ Il tourne entièrement en local sur ta machine — aucune donnée ne part sur in
 
 ---
 
-## 🗂️ Structure du projet
+##  Structure du projet
 
 ```
 projet/
@@ -32,7 +32,7 @@ projet/
 
 ---
 
-## ⚙️ Prérequis
+##  Prérequis
 
 - Python 3.10+
 - [Ollama](https://ollama.com) installé sur la machine
@@ -71,12 +71,12 @@ pip install -r requirements.txt
 
 ### 4. Installer le modèle DeepSeek via Ollama
 
-> ⚡ **Recommandé pour la vitesse** — choisir selon ta RAM :
+>  **Recommandé pour la vitesse**
 
 | Modèle | RAM nécessaire | Vitesse | Qualité |
 |--------|---------------|---------|---------|
 | `deepseek-r1:1.5b` | ~2 Go | ⚡⚡⚡ Rapide | Correct |
-| `deepseek-r1:7b` | ~8 Go | 🐢 Lent sans GPU | Bon |
+| `deepseek-r1:7b` | ~8 Go |  Lent sans GPU | Bon |
 | `llama3.2:3b` | ~3 Go | ⚡⚡⚡ Très rapide | Bon |
 
 ```bash
@@ -94,7 +94,7 @@ model="deepseek-r1:1.5b"   # change selon ce que tu as installé
 
 ---
 
-## ▶️ Lancer l'application
+##  Lancer l'application
 
 ```bash
 # Activer l'environnement virtuel
@@ -108,7 +108,7 @@ L'application s'ouvre sur **http://localhost:8501**
 
 ---
 
-## 🧠 Optimisations appliquées
+##  Optimisations appliquées
 
 Ce projet a été optimisé pour être le plus rapide possible sur une machine sans GPU :
 
@@ -124,7 +124,7 @@ Ce projet a été optimisé pour être le plus rapide possible sur une machine s
 
 ---
 
-## 🔧 Fichiers clés expliqués
+##  Fichiers clés expliqués
 
 ### `src/brain.py`
 - `get_embeddings()` : charge le modèle `all-MiniLM-L6-v2` (transforme le texte en vecteurs)
@@ -146,7 +146,7 @@ Ce projet a été optimisé pour être le plus rapide possible sur une machine s
 
 ---
 
-## ❓ Problèmes fréquents
+##  Problèmes fréquents
 
 **La réponse prend plus de 5 minutes**
 → Ton modèle est trop lourd pour ta machine. Passe à `deepseek-r1:1.5b` ou `llama3.2:3b`
@@ -162,7 +162,7 @@ Ce projet a été optimisé pour être le plus rapide possible sur une machine s
 
 ---
 
-## 📦 Dépendances principales
+##  Dépendances principales
 
 ```
 streamlit
