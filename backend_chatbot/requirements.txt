@@ -1,0 +1,19 @@
+# OCR & Document Parsing
+easyocr
+pypdf
+opencv-python-headless
+
+# AI Framework & Logic
+langchain
+langchain-community
+langchain-huggingface
+
+# Vector Database & Embeddings
+chromadb
+sentence-transformers
+
+# Interface
+streamlit
+
+# Utilities
+python-dotenv
