@@ -180,4 +180,3 @@ numpy
 
 ---
 
-*Projet développé et optimisé avec assistance Claude (Anthropic)*
